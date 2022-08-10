@@ -1,10 +1,10 @@
 public class vowels {
     public static String disemvowel(String str) {
-
-        return str;
+        return str.replaceAll("[aeuio]", "");
     }
     public static void main(String[] args) {
-        System.out.println(disemvowel("bruh looser"));
+        String str = disemvowel("bruh looser");
+        System.out.println(str);
     }
 }
 
