@@ -19,18 +19,20 @@ public class descending {
     public static int sortDesc(final int num) {
         int temp = num;
         ArrayList<Integer> array = new ArrayList<Integer>();
+
         do{
             array.add(temp % 10);
             temp /= 10;
         } while  (temp > 0);
+
         int begin = 0, end = array.size();
+
         Collections.sort(array);
         Collections.reverse(array);
         int res=0;
-        System.out.println(array);
+
         for(int i = 0;i < array.size();i++) {
             res = res * 10 + array.get(i);
-            System.out.println(res);
         }
 
         return res;
